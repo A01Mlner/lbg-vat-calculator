@@ -45,7 +45,7 @@ pipeline {
         script {
           // Running npm start to start the application
           echo 'Starting the app...'
-          sh "screen -d -m npm start"
+          sh "npm start & disown"
         }
       }
     }
