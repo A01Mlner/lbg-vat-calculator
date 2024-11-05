@@ -45,7 +45,7 @@ pipeline {
         script {
           // Running npm start to start the application
           echo 'Starting the app...'
-          sh "npm start & disown"
+          sh "sudo screen -dmS myapp npm start"
         }
       }
     }
