@@ -45,7 +45,7 @@ pipeline {
         script {
           // Running npm start to start the application
           echo 'Starting the app...'
-          sh "screen -dmS myapp npm start"
+          sh "cd /var/lib/jenkins/workspace/jenkins-sonarqube-test-job & screen -dmS myapp npm start"
         }
       }
     }
